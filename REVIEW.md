@@ -7,7 +7,7 @@ Your tmux configuration has been reviewed and several critical issues have been 
 ## Issues Fixed ✅
 
 ### 1. **Plugin Loading Path Error** (Critical)
-- **Issue**: Line 92 attempted to manually run the Catppuccin plugin from an incorrect path: `~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux-plugins`
+- **Issue**: The configuration attempted to manually run the Catppuccin plugin from an incorrect path: `~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux-plugins`
 - **Problem**: This path was inconsistent with the TPM plugin directory (`~/.tmux/plugins/`) and used an incorrect file name
 - **Fix**: Removed the manual run command and let TPM handle plugin loading automatically
 
@@ -17,8 +17,8 @@ Your tmux configuration has been reviewed and several critical issues have been 
 - **Rationale**: TPM should be declared first as it manages other plugins
 
 ### 3. **Commented Code Cleanup**
-- **Issue**: Stray comment markers on lines 101 and 107 (`#` without content)
-- **Fix**: Removed unnecessary comment markers and reorganized comments
+- **Issue**: Stray comment markers without content in the theme configuration section
+- **Fix**: Removed unnecessary comment markers and reorganized comments for better clarity
 
 ### 4. **Configuration Grouping**
 - **Improvement**: Better organized the Catppuccin configuration options with clearer comments
